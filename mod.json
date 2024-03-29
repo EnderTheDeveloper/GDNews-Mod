@@ -1,0 +1,41 @@
+{
+	"geode": "2.0.0-beta.20",
+	"gd": "2.204",
+	"version": "v1.0.0",
+	"id": "endrei.gdnews",
+	"name": "GDNews",
+	"developer": "Endrei",
+	"description": "Geometry Dash News",
+
+    "resources": {
+        "sprites": [
+            "resources/*.png"
+			
+           
+        ],
+
+			"spritesheets": {
+				"SwelveSheet": [
+					"swelve/*.png"
+				]
+			}
+		
+    },
+		"settings": {
+			"news-source": {
+				"name": "News Source",
+				"description": "News Source URL",
+				"type": "string",
+				"default": "https://enderthedeveloper.github.io/GDNews/news.txt"
+			}
+
+
+
+
+			
+		}
+	
+	
+
+	
+}
