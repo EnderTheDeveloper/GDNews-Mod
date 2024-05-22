@@ -12,7 +12,11 @@ add_library(${PROJECT_NAME} SHARED
     src/SwelvyBG.hpp
     # Add your cpp files here
 )
-
+if ("${GEODE_TARGET_PLATFORM}" STREQUAL "iOS" OR IOS)
+    set(CMAKE_OSX_ARCHITECTURES "arm64")
+else()
+    set(CMAKE_OSX_ARCHITECTURES "x86_64")
+endif()
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
 else()
